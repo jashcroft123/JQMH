@@ -13,7 +13,11 @@
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
 		<Item Name="Scripting" Type="Folder">
-			<Item Name="AddEvent.vi" Type="VI" URL="../TesterModule/AddEvent.vi"/>
+			<Item Name="testing" Type="Folder">
+				<Item Name="MakeTDtargVI.vi" Type="VI" URL="../Scripting/testing/MakeTDtargVI.vi"/>
+			</Item>
+			<Item Name="AddEvent.vi" Type="VI" URL="../Scripting/AddEvent.vi"/>
+			<Item Name="CreateNewRegUserEvent.vi" Type="VI" URL="../Scripting/CreateNewRegUserEvent.vi"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Perf" Type="Folder">
@@ -32,6 +36,7 @@
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
 				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi"/>
 				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl"/>
+				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl"/>
 				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
 				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
