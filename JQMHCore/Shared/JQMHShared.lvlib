@@ -4,5 +4,10 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">604012544</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.SortType" Type="Int">3</Property>
+	<Item Name="DiedEvent" Type="Folder">
+		<Item Name="Died.ctl" Type="VI" URL="../Died.ctl"/>
+	</Item>
 	<Item Name="Init.vi" Type="VI" URL="../Init.vi"/>
+	<Item Name="QMH_Enqueue RR.vi" Type="VI" URL="../../../Message Queue_class/QMH_Enqueue RR.vi"/>
 </Library>
