@@ -45,9 +45,14 @@
 		<Item Name="Core" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Support" Type="Folder">
+				<Item Name="Debug" Type="Folder">
+					<Item Name="DebugTraceSingleton.lvlib" Type="Library" URL="../JQMHCore/DebugTrace/DebugTraceSingleton/DebugTraceSingleton.lvlib"/>
+					<Item Name="DebugTraceHandle.lvclass" Type="LVClass" URL="../JQMHCore/DebugTrace/DebugTraceHandle/DebugTraceHandle.lvclass"/>
+					<Item Name="FGVWithEventTrace.lvclass" Type="LVClass" URL="../JQMHCore/DebugTrace/FGVWithEventTrace/FGVWithEventTrace.lvclass"/>
+					<Item Name="DebugTrace.lvlib" Type="Library" URL="../JQMHCore/DebugTrace/DebugTrace.lvlib"/>
+				</Item>
 				<Item Name="Watchdog.lvclass" Type="LVClass" URL="../Watchdog/Watchdog.lvclass"/>
-				<Item Name="DebugTrace.lvlib" Type="Library" URL="../JQMHCore/DebugTrace/DebugTrace.lvlib"/>
-				<Item Name="JQMHShared.lvlib" Type="Library" URL="../JQMHCore/Shared/JQMHShared.lvlib"/>
+				<Item Name="RQMHShared.lvlib" Type="Library" URL="../JQMHCore/Shared/RQMHShared.lvlib"/>
 				<Item Name="RQMHMessageQueue.lvclass" Type="LVClass" URL="../Message Queue_class/RQMHMessageQueue.lvclass"/>
 			</Item>
 			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../JQMHCore/JQMHStartup/RQMHStartup.lvclass"/>
@@ -66,6 +71,7 @@
 		</Item>
 		<Item Name="TemplateModule" Type="Folder">
 			<Item Name="TemplateModule.lvclass" Type="LVClass" URL="../Scripting/templates/TemplateModule/TemplateModule.lvclass"/>
+			<Item Name="TemplateModule.Tester.vi" Type="VI" URL="../Scripting/templates/TemplateModule/TemplateModule.Tester.vi"/>
 		</Item>
 		<Item Name="NewTemplate" Type="Folder">
 			<Item Name="NewTemplate.lvclass" Type="LVClass" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.lvclass"/>
@@ -88,6 +94,7 @@
 			</Item>
 			<Item Name="Layout" Type="Folder">
 				<Item Name="Layout.lvclass" Type="LVClass" URL="../ModuleTemplates/Layout/Layout.lvclass"/>
+				<Item Name="Layout.Tester.vi" Type="VI" URL="../ModuleTemplates/Layout/Layout.Tester.vi"/>
 			</Item>
 			<Item Name="TitleBar" Type="Folder">
 				<Item Name="TitleBar.lvclass" Type="LVClass" URL="../ModuleTemplates/TitleBar/TitleBar.lvclass"/>
@@ -103,26 +110,16 @@
 			</Item>
 			<Item Name="ErrorHandler" Type="Folder">
 				<Item Name="ErrorHandler.lvclass" Type="LVClass" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.lvclass"/>
+				<Item Name="ErrorHandler.Tester.vi" Type="VI" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.Tester.vi"/>
 			</Item>
 			<Item Name="ModuleManager" Type="Folder">
 				<Item Name="ModuleManager.lvclass" Type="LVClass" URL="../ModuleTemplates/ModuleManager/ModuleManager.lvclass"/>
+				<Item Name="ModuleManager.Tester.vi" Type="VI" URL="../ModuleTemplates/ModuleManager/ModuleManager.Tester.vi"/>
 			</Item>
 		</Item>
 		<Item Name="Startup" Type="Folder">
 			<Item Name="Startup.lvlib" Type="Library" URL="../Startup/Startup.lvlib"/>
 			<Item Name="Launcher.vi" Type="VI" URL="../Startup/Launcher.vi">
-				<Property Name="marked" Type="Int">0</Property>
-			</Item>
-		</Item>
-		<Item Name="Testing" Type="Folder">
-			<Item Name="Testing.lvclass" Type="LVClass" URL="../ModuleTemplates/Testing/Testing.lvclass"/>
-			<Item Name="Testing.Tester.vi" Type="VI" URL="../ModuleTemplates/Testing/Testing.Tester.vi">
-				<Property Name="marked" Type="Int">0</Property>
-			</Item>
-		</Item>
-		<Item Name="Acub" Type="Folder">
-			<Item Name="Acub.lvclass" Type="LVClass" URL="../ModuleTemplates/Acub/Acub.lvclass"/>
-			<Item Name="Acub.Tester.vi" Type="VI" URL="../ModuleTemplates/Acub/Acub.Tester.vi">
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
 		</Item>
@@ -292,12 +289,10 @@
 				</Item>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="GetContents.vi" Type="VI" URL="../ModuleTemplates/UIManager/GetContents.vi">
-				<Property Name="marked" Type="Int">0</Property>
-			</Item>
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="AddEngPanel Args.ctl" Type="VI" URL="../ModuleTemplates/UIManager/AddEngPanel Args.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
