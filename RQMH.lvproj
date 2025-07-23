@@ -55,6 +55,20 @@
 				<Item Name="RQMHShared.lvlib" Type="Library" URL="../JQMHCore/Shared/RQMHShared.lvlib"/>
 				<Item Name="RQMHMessageQueue.lvclass" Type="LVClass" URL="../Message Queue_class/RQMHMessageQueue.lvclass"/>
 			</Item>
+			<Item Name="ErrorReporting" Type="Folder">
+				<Item Name="Handles" Type="Folder">
+					<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LoggingHandle/LoggingHandle.lvclass"/>
+					<Item Name="EventLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Event/EventLogHandle.lvclass"/>
+					<Item Name="MessageLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Message/MessageLogHandle.lvclass"/>
+					<Item Name="SQLiteLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/SQLiteLogHandle/SQLiteLogHandle.lvclass"/>
+				</Item>
+				<Item Name="RQMHLogger.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/RQMH/RQMHLogger.lvlib"/>
+				<Item Name="RQMHLogger.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/RQMHLogger/RQMHLogger.lvclass"/>
+				<Item Name="LogRecord.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/Record/LogRecord.lvclass"/>
+				<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
+				<Item Name="LoggerShared.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/LoggerShared.lvlib"/>
+				<Item Name="Example.vi" Type="VI" URL="../JQMHCore/ErrorReporting/Example.vi"/>
+			</Item>
 			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../JQMHCore/JQMHStartup/RQMHStartup.lvclass"/>
 			<Item Name="RQMHModule.lvclass" Type="LVClass" URL="../JQMHCore/Module/RQMHModule.lvclass"/>
 			<Item Name="Module Container.lvlib" Type="Library" URL="../JQMHCore/Registry/Module Container.lvlib"/>
@@ -292,7 +306,6 @@
 			<Item Name="user32.dll" Type="Document" URL="user32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
-			<Item Name="AddEngPanel Args.ctl" Type="VI" URL="../ModuleTemplates/UIManager/AddEngPanel Args.ctl"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
