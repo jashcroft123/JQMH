@@ -16,62 +16,53 @@
 		<Item Name="Support" Type="Folder">
 			<Item Name="Scripting" Type="Folder">
 				<Item Name="Work" Type="Folder"/>
-				<Item Name="Planning" Type="Folder">
-					<Item Name="PerfTests" Type="Folder"/>
-					<Item Name="RR_scripting.vi" Type="VI" URL="../Scripting/Planning/RR_scripting.vi">
-						<Property Name="marked" Type="Int">0</Property>
-					</Item>
-				</Item>
 				<Item Name="Templates" Type="Folder">
-					<Item Name="RequestDropTemplate.vi" Type="VI" URL="../Scripting/templates/RequestDropTemplate.vi">
-						<Property Name="marked" Type="Int">0</Property>
-					</Item>
-					<Item Name="ReplyDropTemplate.vi" Type="VI" URL="../Scripting/templates/ReplyDropTemplate.vi">
+					<Item Name="RequestDropTemplate.vi" Type="VI" URL="../Support/Scripting/templates/RequestDropTemplate.vi"/>
+					<Item Name="ReplyDropTemplate.vi" Type="VI" URL="../Support/Scripting/templates/ReplyDropTemplate.vi">
 						<Property Name="marked" Type="Int">0</Property>
 					</Item>
 				</Item>
-				<Item Name="AddNewModule.lvlib" Type="Library" URL="../Scripting/Module/AddNewModule.lvlib"/>
-				<Item Name="AddNewEvent.lvlib" Type="Library" URL="../Scripting/Event/AddNewEvent.lvlib"/>
-				<Item Name="AddHelper.lvlib" Type="Library" URL="../Scripting/Helper/AddHelper.lvlib"/>
-				<Item Name="FindTesterVI.vi" Type="VI" URL="../Scripting/FindTesterVI.vi">
+				<Item Name="AddNewModule.lvlib" Type="Library" URL="../Support/Scripting/Module/AddNewModule.lvlib"/>
+				<Item Name="AddNewEvent.lvlib" Type="Library" URL="../Support/Scripting/Event/AddNewEvent.lvlib"/>
+				<Item Name="AddHelper.lvlib" Type="Library" URL="../Support/Scripting/Helper/AddHelper.lvlib"/>
+				<Item Name="FindTesterVI.vi" Type="VI" URL="../Support/Scripting/FindTesterVI.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
-				<Item Name="UI.vi" Type="VI" URL="../Scripting/UI.vi">
+				<Item Name="UI.vi" Type="VI" URL="../Support/Scripting/UI.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
 			</Item>
-			<Item Name="ProjectProvider" Type="Folder"/>
 		</Item>
 		<Item Name="Core" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Support" Type="Folder">
 				<Item Name="Debug" Type="Folder">
-					<Item Name="DebugTraceSingleton.lvlib" Type="Library" URL="../JQMHCore/DebugTrace/DebugTraceSingleton/DebugTraceSingleton.lvlib"/>
-					<Item Name="DebugTraceHandle.lvclass" Type="LVClass" URL="../JQMHCore/DebugTrace/DebugTraceHandle/DebugTraceHandle.lvclass"/>
-					<Item Name="FGVWithEventTrace.lvclass" Type="LVClass" URL="../JQMHCore/DebugTrace/FGVWithEventTrace/FGVWithEventTrace.lvclass"/>
-					<Item Name="DebugTrace.lvlib" Type="Library" URL="../JQMHCore/DebugTrace/DebugTrace.lvlib"/>
+					<Item Name="DebugTraceSingleton.lvlib" Type="Library" URL="../RQMHCore/DebugTrace/DebugTraceSingleton/DebugTraceSingleton.lvlib"/>
+					<Item Name="DebugTraceHandle.lvclass" Type="LVClass" URL="../RQMHCore/DebugTrace/DebugTraceHandle/DebugTraceHandle.lvclass"/>
+					<Item Name="FGVWithEventTrace.lvclass" Type="LVClass" URL="../RQMHCore/DebugTrace/FGVWithEventTrace/FGVWithEventTrace.lvclass"/>
+					<Item Name="DebugTrace.lvlib" Type="Library" URL="../RQMHCore/DebugTrace/DebugTrace.lvlib"/>
 				</Item>
-				<Item Name="Watchdog.lvclass" Type="LVClass" URL="../Watchdog/Watchdog.lvclass"/>
-				<Item Name="RQMHShared.lvlib" Type="Library" URL="../JQMHCore/Shared/RQMHShared.lvlib"/>
-				<Item Name="RQMHMessageQueue.lvclass" Type="LVClass" URL="../Message Queue_class/RQMHMessageQueue.lvclass"/>
-			</Item>
-			<Item Name="ErrorReporting" Type="Folder">
-				<Item Name="Handles" Type="Folder">
-					<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
-					<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Interface/LoggingHandle.lvclass"/>
-					<Item Name="EventLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Event/EventLogHandle.lvclass"/>
-					<Item Name="MessageLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Message/MessageLogHandle.lvclass"/>
-					<Item Name="SQLiteLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/SQLiteLogHandle/SQLiteLogHandle.lvclass"/>
+				<Item Name="ErrorReporting" Type="Folder">
+					<Item Name="Handles" Type="Folder">
+						<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
+						<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Interface/LoggingHandle.lvclass"/>
+						<Item Name="EventLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Event/EventLogHandle.lvclass"/>
+						<Item Name="MessageLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Message/MessageLogHandle.lvclass"/>
+						<Item Name="SQLiteLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/SQLiteLogHandle/SQLiteLogHandle.lvclass"/>
+					</Item>
+					<Item Name="RQMHLogSingleton.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Singleton/RQMHLogSingleton.lvlib"/>
+					<Item Name="RQMHLogger.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/RQMHLogger/RQMHLogger.lvclass"/>
+					<Item Name="LogRecord.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/Record/LogRecord.lvclass"/>
+					<Item Name="LoggerShared.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Shared/LoggerShared.lvlib"/>
+					<Item Name="Example.vi" Type="VI" URL="../RQMHCore/ErrorReporting/Example.vi"/>
 				</Item>
-				<Item Name="RQMHLogSingleton.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/Singleton/RQMHLogSingleton.lvlib"/>
-				<Item Name="RQMHLogger.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/RQMHLogger/RQMHLogger.lvclass"/>
-				<Item Name="LogRecord.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/Record/LogRecord.lvclass"/>
-				<Item Name="LoggerShared.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/Shared/LoggerShared.lvlib"/>
-				<Item Name="Example.vi" Type="VI" URL="../JQMHCore/ErrorReporting/Example.vi"/>
 			</Item>
-			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../JQMHCore/JQMHStartup/RQMHStartup.lvclass"/>
-			<Item Name="RQMHModule.lvclass" Type="LVClass" URL="../JQMHCore/Module/RQMHModule.lvclass"/>
-			<Item Name="Module Container.lvlib" Type="Library" URL="../JQMHCore/Registry/Module Container.lvlib"/>
+			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../RQMHCore/Startup/RQMHStartup.lvclass"/>
+			<Item Name="RQMHModule.lvclass" Type="LVClass" URL="../RQMHCore/ModuleCore/RQMHModule.lvclass"/>
+			<Item Name="Module Container.lvlib" Type="Library" URL="../RQMHCore/Registry/Module Container.lvlib"/>
+			<Item Name="RQMHShared.lvlib" Type="Library" URL="../RQMHCore/Shared/RQMHShared.lvlib"/>
+			<Item Name="RQMHMessageQueue.lvclass" Type="LVClass" URL="../RQMHCore/ModQueue/RQMHMessageQueue.lvclass"/>
+			<Item Name="Watchdog.lvclass" Type="LVClass" URL="../RQMHCore/Watchdog/Watchdog.lvclass"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
 			<Item Name="Perf" Type="Folder">
@@ -82,10 +73,6 @@
 			<Item Name="ModuleDiedEvent.vi" Type="VI" URL="../Tests/ModuleDiedEvent.vi">
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
-		</Item>
-		<Item Name="TemplateModule" Type="Folder">
-			<Item Name="TemplateModule.lvclass" Type="LVClass" URL="../Scripting/templates/TemplateModule/TemplateModule.lvclass"/>
-			<Item Name="TemplateModule.Tester.vi" Type="VI" URL="../Scripting/templates/TemplateModule/TemplateModule.Tester.vi"/>
 		</Item>
 		<Item Name="NewTemplate" Type="Folder">
 			<Item Name="NewTemplate.lvclass" Type="LVClass" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.lvclass"/>
@@ -136,9 +123,6 @@
 			<Item Name="Launcher.vi" Type="VI" URL="../Startup/Launcher.vi">
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
-		</Item>
-		<Item Name="Initialise.ctl" Type="VI" URL="../JQMHCore/Module/Initialise.ctl">
-			<Property Name="marked" Type="Int">0</Property>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
