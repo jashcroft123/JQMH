@@ -57,16 +57,16 @@
 			</Item>
 			<Item Name="ErrorReporting" Type="Folder">
 				<Item Name="Handles" Type="Folder">
-					<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LoggingHandle/LoggingHandle.lvclass"/>
+					<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
+					<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Interface/LoggingHandle.lvclass"/>
 					<Item Name="EventLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Event/EventLogHandle.lvclass"/>
 					<Item Name="MessageLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/Message/MessageLogHandle.lvclass"/>
 					<Item Name="SQLiteLogHandle.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/LogHandle/SQLiteLogHandle/SQLiteLogHandle.lvclass"/>
 				</Item>
-				<Item Name="RQMHLogger.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/RQMH/RQMHLogger.lvlib"/>
+				<Item Name="RQMHLogSingleton.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/Singleton/RQMHLogSingleton.lvlib"/>
 				<Item Name="RQMHLogger.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/RQMHLogger/RQMHLogger.lvclass"/>
 				<Item Name="LogRecord.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/Record/LogRecord.lvclass"/>
-				<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../JQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
-				<Item Name="LoggerShared.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/LoggerShared.lvlib"/>
+				<Item Name="LoggerShared.lvlib" Type="Library" URL="../JQMHCore/ErrorReporting/Shared/LoggerShared.lvlib"/>
 				<Item Name="Example.vi" Type="VI" URL="../JQMHCore/ErrorReporting/Example.vi"/>
 			</Item>
 			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../JQMHCore/JQMHStartup/RQMHStartup.lvclass"/>

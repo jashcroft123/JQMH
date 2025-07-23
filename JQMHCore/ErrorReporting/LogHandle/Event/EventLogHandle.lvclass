@@ -16,7 +16,7 @@
 	<Property Name="NI.LVClass.LowestCompatibleVersion" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Item Name="Parent Libraries" Type="Parent Libraries">
-		<Item Name="LoggingHandle.lvclass" Type="Parent" URL="../../../LoggingHandle/LoggingHandle.lvclass"/>
+		<Item Name="LoggingHandle.lvclass" Type="Parent" URL="../../Interface/LoggingHandle.lvclass"/>
 	</Item>
 	<Item Name="EventLogHandle.ctl" Type="Class Private Data" URL="EventLogHandle.ctl">
 		<Property Name="NI.LibItem.Scope" Type="Int">2</Property>
