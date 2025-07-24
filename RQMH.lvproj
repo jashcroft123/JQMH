@@ -17,7 +17,9 @@
 			<Item Name="Scripting" Type="Folder">
 				<Item Name="Work" Type="Folder"/>
 				<Item Name="Templates" Type="Folder">
-					<Item Name="RequestDropTemplate.vi" Type="VI" URL="../Support/Scripting/templates/RequestDropTemplate.vi"/>
+					<Item Name="RequestDropTemplate.vi" Type="VI" URL="../Support/Scripting/templates/RequestDropTemplate.vi">
+						<Property Name="marked" Type="Int">0</Property>
+					</Item>
 					<Item Name="ReplyDropTemplate.vi" Type="VI" URL="../Support/Scripting/templates/ReplyDropTemplate.vi">
 						<Property Name="marked" Type="Int">0</Property>
 					</Item>
@@ -47,14 +49,14 @@
 						<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
 						<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Interface/LoggingHandle.lvclass"/>
 						<Item Name="EventLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Event/EventLogHandle.lvclass"/>
-						<Item Name="MessageLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Message/MessageLogHandle.lvclass"/>
-						<Item Name="SQLiteLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/SQLiteLogHandle/SQLiteLogHandle.lvclass"/>
 					</Item>
 					<Item Name="RQMHLogSingleton.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Singleton/RQMHLogSingleton.lvlib"/>
 					<Item Name="RQMHLogger.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/RQMHLogger/RQMHLogger.lvclass"/>
 					<Item Name="LogRecord.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/Record/LogRecord.lvclass"/>
 					<Item Name="LoggerShared.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Shared/LoggerShared.lvlib"/>
-					<Item Name="Example.vi" Type="VI" URL="../RQMHCore/ErrorReporting/Example.vi"/>
+					<Item Name="Example.vi" Type="VI" URL="../RQMHCore/ErrorReporting/Example.vi">
+						<Property Name="marked" Type="Int">0</Property>
+					</Item>
 				</Item>
 			</Item>
 			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../RQMHCore/Startup/RQMHStartup.lvclass"/>
@@ -76,9 +78,6 @@
 		</Item>
 		<Item Name="NewTemplate" Type="Folder">
 			<Item Name="NewTemplate.lvclass" Type="LVClass" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.lvclass"/>
-			<Item Name="NewTemplate.Tester.vi" Type="VI" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.Tester.vi">
-				<Property Name="marked" Type="Int">0</Property>
-			</Item>
 		</Item>
 		<Item Name="Framework" Type="Folder">
 			<Item Name="UIManager" Type="Folder">
@@ -95,7 +94,9 @@
 			</Item>
 			<Item Name="Layout" Type="Folder">
 				<Item Name="Layout.lvclass" Type="LVClass" URL="../ModuleTemplates/Layout/Layout.lvclass"/>
-				<Item Name="Layout.Tester.vi" Type="VI" URL="../ModuleTemplates/Layout/Layout.Tester.vi"/>
+				<Item Name="Layout.Tester.vi" Type="VI" URL="../ModuleTemplates/Layout/Layout.Tester.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
 			</Item>
 			<Item Name="TitleBar" Type="Folder">
 				<Item Name="TitleBar.lvclass" Type="LVClass" URL="../ModuleTemplates/TitleBar/TitleBar.lvclass"/>
@@ -111,16 +112,29 @@
 			</Item>
 			<Item Name="ErrorHandler" Type="Folder">
 				<Item Name="ErrorHandler.lvclass" Type="LVClass" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.lvclass"/>
-				<Item Name="ErrorHandler.Tester.vi" Type="VI" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.Tester.vi"/>
+				<Item Name="ErrorHandler.Tester.vi" Type="VI" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.Tester.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
 			</Item>
 			<Item Name="ModuleManager" Type="Folder">
 				<Item Name="ModuleManager.lvclass" Type="LVClass" URL="../ModuleTemplates/ModuleManager/ModuleManager.lvclass"/>
-				<Item Name="ModuleManager.Tester.vi" Type="VI" URL="../ModuleTemplates/ModuleManager/ModuleManager.Tester.vi"/>
+				<Item Name="ModuleManager.Tester.vi" Type="VI" URL="../ModuleTemplates/ModuleManager/ModuleManager.Tester.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
 			</Item>
 		</Item>
 		<Item Name="Startup" Type="Folder">
 			<Item Name="Startup.lvlib" Type="Library" URL="../Startup/Startup.lvlib"/>
 			<Item Name="Launcher.vi" Type="VI" URL="../Startup/Launcher.vi">
+				<Property Name="marked" Type="Int">0</Property>
+			</Item>
+		</Item>
+		<Item Name="CRON" Type="Folder">
+			<Item Name="CRON.lvclass" Type="LVClass" URL="../ModuleTemplates/CRON/CRON.lvclass"/>
+			<Item Name="CRON.Tester.vi" Type="VI" URL="../ModuleTemplates/CRON/CRON.Tester.vi">
+				<Property Name="marked" Type="Int">0</Property>
+			</Item>
+			<Item Name="CRON_Example.vi" Type="VI" URL="../ModuleTemplates/CRON/CRON_Example.vi">
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
 		</Item>
@@ -283,6 +297,37 @@
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
 				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="openCron.lvlib" Type="Library" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Cron Scheduler/openCron.lvlib"/>
+				<Item Name="MD5Checksum format message-digest.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum format message-digest.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="MD5Checksum core.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum core.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="MD5Checksum pad.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum pad.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="MD5Checksum string.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum string.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="isLeapYear (integer).vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/isLeapYear (integer).vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="GregorianCal_MonthLengths.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_MonthLengths.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="GregorianCal_Month -- enum.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_Month -- enum.ctl">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="GregorianCal_MonthLength.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_MonthLength.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
 			</Item>
