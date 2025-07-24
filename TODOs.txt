@@ -1,0 +1,5 @@
+Log handles for
+	SQLite
+	UDP/stream
+
+Simple module template with just a helper?
