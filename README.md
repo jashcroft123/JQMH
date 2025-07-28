@@ -1,6 +1,6 @@
 A different take on the DQMH framework. Better support for cloneables
 
-To do: 
+To do:  
 Tidy scripting, document and close references
 
 HSELog style debugger with SQLite and UDP/stream
