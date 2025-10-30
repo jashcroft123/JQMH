@@ -1,7 +1,9 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="24008000">
+	<Property Name="CCSymbols" Type="Str">Logger_Internal_Verbose,True;</Property>
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">24.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="NI.Project.Description" Type="Str"></Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -46,8 +48,8 @@
 				</Item>
 				<Item Name="ErrorReporting" Type="Folder">
 					<Item Name="Handles" Type="Folder">
-						<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
 						<Item Name="LoggingHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Interface/LoggingHandle.lvclass"/>
+						<Item Name="HandleHolder.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/HandleHolder/HandleHolder.lvclass"/>
 						<Item Name="EventLogHandle.lvclass" Type="LVClass" URL="../RQMHCore/ErrorReporting/LogHandle/Event/EventLogHandle.lvclass"/>
 					</Item>
 					<Item Name="RQMHLogSingleton.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Singleton/RQMHLogSingleton.lvlib"/>
@@ -57,6 +59,7 @@
 					<Item Name="Example.vi" Type="VI" URL="../RQMHCore/ErrorReporting/Example.vi">
 						<Property Name="marked" Type="Int">0</Property>
 					</Item>
+					<Item Name="Logger.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Helper/Logger.lvlib"/>
 				</Item>
 			</Item>
 			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../RQMHCore/Startup/RQMHStartup.lvclass"/>
@@ -138,204 +141,7 @@
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
 		</Item>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="vi.lib" Type="Folder">
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="High Resolution Relative Seconds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/High Resolution Relative Seconds.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVPointTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPointTypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVPositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPositionTypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="NI_AALBase.lvlib" Type="Library" URL="/&lt;vilib&gt;/Analysis/NI_AALBase.lvlib"/>
-				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
-				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Recursive File List.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Recursive File List.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVMapReplaceAction.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVMapReplaceAction.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Get GObject Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/Get GObject Label.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="NI_Data Type.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/Data Type/NI_Data Type.lvlib"/>
-				<Item Name="Get LV Class Default Value By Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Default Value By Name.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="lveventtype.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/lveventtype.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVPoint32TypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVPoint32TypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="NewVIObject_LVRelativeDirectionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/_script/New VI Object TypeDefs/NewVIObject_LVRelativeDirectionTypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="NewVIObject_LVRelativePositionTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/_script/New VI Object TypeDefs/NewVIObject_LVRelativePositionTypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="VIAnUtil Check Type If ErrClust.vi" Type="VI" URL="/&lt;vilib&gt;/addons/analyzer/_analyzerutils.llb/VIAnUtil Check Type If ErrClust.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="VIAnUtil Get Terminal Data Type.vi" Type="VI" URL="/&lt;vilib&gt;/addons/analyzer/_analyzerutils.llb/VIAnUtil Get Terminal Data Type.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="DialogTypeEnum.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogTypeEnum.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Set Bold Text.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set Bold Text.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="eventvkey.ctl" Type="VI" URL="/&lt;vilib&gt;/event_ctls.llb/eventvkey.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="TagReturnType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/TagReturnType.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="ErrWarn.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/ErrWarn.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Details Display Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Details Display Dialog.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Find Tag.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Find Tag.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Format Message String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Format Message String.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Error Code Database.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Code Database.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Set String Value.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Set String Value.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="General Error Handler Core CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler Core CORE.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="DialogType.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/DialogType.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="General Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/General Error Handler.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Simple Error Handler.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Simple Error Handler.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="openCron.lvlib" Type="Library" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Cron Scheduler/openCron.lvlib"/>
-				<Item Name="MD5Checksum format message-digest.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum format message-digest.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="MD5Checksum core.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum core.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="MD5Checksum pad.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum pad.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="MD5Checksum string.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/MD5Checksum.llb/MD5Checksum string.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="LVDateTimeRec.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVDateTimeRec.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="isLeapYear (integer).vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/isLeapYear (integer).vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="GregorianCal_MonthLengths.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_MonthLengths.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="GregorianCal_Month -- enum.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_Month -- enum.ctl">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="GregorianCal_MonthLength.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_MonthLength.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
-			</Item>
-			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="user32.dll" Type="Document" URL="user32.dll">
-				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
-			</Item>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
