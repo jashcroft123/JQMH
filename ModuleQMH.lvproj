@@ -62,11 +62,14 @@
 					<Item Name="Logger.lvlib" Type="Library" URL="../RQMHCore/ErrorReporting/Helper/Logger.lvlib"/>
 				</Item>
 			</Item>
-			<Item Name="RQMHStartup.lvclass" Type="LVClass" URL="../RQMHCore/Startup/RQMHStartup.lvclass"/>
-			<Item Name="RQMHModule.lvclass" Type="LVClass" URL="../RQMHCore/ModuleCore/RQMHModule.lvclass"/>
+			<Item Name="ActionStack" Type="Folder">
+				<Item Name="ActionStack.lvlib" Type="Library" URL="../RQMHCore/ActionStack/ActionStack.lvlib"/>
+			</Item>
+			<Item Name="ModuleStartup.lvclass" Type="LVClass" URL="../RQMHCore/Startup/ModuleStartup.lvclass"/>
+			<Item Name="Module.lvclass" Type="LVClass" URL="../RQMHCore/ModuleCore/Module.lvclass"/>
 			<Item Name="Module Container.lvlib" Type="Library" URL="../RQMHCore/Registry/Module Container.lvlib"/>
-			<Item Name="RQMHShared.lvlib" Type="Library" URL="../RQMHCore/Shared/RQMHShared.lvlib"/>
-			<Item Name="RQMHMessageQueue.lvclass" Type="LVClass" URL="../RQMHCore/ModQueue/RQMHMessageQueue.lvclass"/>
+			<Item Name="ModuleShared.lvlib" Type="Library" URL="../RQMHCore/Shared/ModuleShared.lvlib"/>
+			<Item Name="ModuleQueue.lvclass" Type="LVClass" URL="../RQMHCore/ModQueue/ModuleQueue.lvclass"/>
 			<Item Name="Watchdog.lvclass" Type="LVClass" URL="../RQMHCore/Watchdog/Watchdog.lvclass"/>
 		</Item>
 		<Item Name="Tests" Type="Folder">
@@ -78,9 +81,6 @@
 			<Item Name="ModuleDiedEvent.vi" Type="VI" URL="../Tests/ModuleDiedEvent.vi">
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
-		</Item>
-		<Item Name="NewTemplate" Type="Folder">
-			<Item Name="NewTemplate.lvclass" Type="LVClass" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.lvclass"/>
 		</Item>
 		<Item Name="Framework" Type="Folder">
 			<Item Name="UIManager" Type="Folder">
@@ -113,6 +113,13 @@
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
 			</Item>
+			<Item Name="ErrorViewer" Type="Folder">
+				<Item Name="ErrorViewer.lvclass" Type="LVClass" URL="../ModuleTemplates/ErrorViewer/ErrorViewer.lvclass"/>
+				<Item Name="ErrorViewer.Tester.vi" Type="VI" URL="../ModuleTemplates/ErrorViewer/ErrorViewer.Tester.vi"/>
+				<Item Name="ErrorViewer.Example.vi" Type="VI" URL="../ModuleTemplates/ErrorViewer/ErrorViewer.Example.vi"/>
+				<Item Name="ErrorLogBuffer.lvclass" Type="LVClass" URL="../ModuleTemplates/ErrorViewer/ErrorLogBuffer/ErrorLogBuffer.lvclass"/>
+				<Item Name="LogCircularBuffer.lvclass" Type="LVClass" URL="../ModuleTemplates/ErrorViewer/LogCircularBuffer/LogCircularBuffer.lvclass"/>
+			</Item>
 			<Item Name="ErrorHandler" Type="Folder">
 				<Item Name="ErrorHandler.lvclass" Type="LVClass" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.lvclass"/>
 				<Item Name="ErrorHandler.Tester.vi" Type="VI" URL="../ModuleTemplates/ErrorHandler/ErrorHandler.Tester.vi">
@@ -125,6 +132,7 @@
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
 			</Item>
+			<Item Name="Cyclic Table.lvclass" Type="LVClass" URL="../DataStructures/src/DataTypes/Cyclic Table/Cyclic Table.lvclass"/>
 		</Item>
 		<Item Name="Startup" Type="Folder">
 			<Item Name="Startup.lvlib" Type="Library" URL="../Startup/Startup.lvlib"/>
@@ -132,14 +140,18 @@
 				<Property Name="marked" Type="Int">0</Property>
 			</Item>
 		</Item>
-		<Item Name="CRON" Type="Folder">
-			<Item Name="CRON.lvclass" Type="LVClass" URL="../ModuleTemplates/CRON/CRON.lvclass"/>
-			<Item Name="CRON.Tester.vi" Type="VI" URL="../ModuleTemplates/CRON/CRON.Tester.vi">
-				<Property Name="marked" Type="Int">0</Property>
+		<Item Name="Templates" Type="Folder">
+			<Item Name="NewTemplate" Type="Folder">
+				<Item Name="NewTemplate.lvclass" Type="LVClass" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.lvclass"/>
+				<Item Name="NewTemplate.Tester.vi" Type="VI" URL="../ModuleTemplates/NewTemplateModule/NewTemplate.Tester.vi"/>
 			</Item>
-			<Item Name="CRON_Example.vi" Type="VI" URL="../ModuleTemplates/CRON/CRON_Example.vi">
-				<Property Name="marked" Type="Int">0</Property>
-			</Item>
+		</Item>
+		<Item Name="SingleLoopTemplate" Type="Folder">
+			<Item Name="SingleLoopTemplate.lvclass" Type="LVClass" URL="../ModuleTemplates/SingleLoopTemplate/SingleLoopTemplate.lvclass"/>
+			<Item Name="SingleLoopTemplate.Tester.vi" Type="VI" URL="../ModuleTemplates/SingleLoopTemplate/SingleLoopTemplate.Tester.vi"/>
+		</Item>
+		<Item Name="Metronome" Type="Folder">
+			<Item Name="Metronome.lvclass" Type="LVClass" URL="../ModuleTemplates/Metronome/Metronome.lvclass"/>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
