@@ -3,6 +3,7 @@
 	<Property Name="NI.Lib.Description" Type="Str">Singleton wrap for global use of a logger</Property>
 	<Property Name="NI.Lib.HelpPath" Type="Str"></Property>
 	<Property Name="NI.Lib.Icon" Type="Bin">*!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!)?!!!*Q(C=\&gt;3R5=.!%)8B"U.![A+99&gt;T#NO!7X-+WY*41,&lt;Q7X)*&lt;W"&lt;=AFM1PYZ&amp;9QAQA2E)E$BDP4PN@4\&gt;3"L(I`3A[&gt;LR^/8RD@ZJ'&gt;@6JB(S&gt;6L[RU78?BP402`\J[87_^7H_Z=3F`6\X0P]UX1R_A;`\UL`F50`R``RO]@,V5X[YXPW4P/,C&amp;9UUZ)7GK?;CLT)C\T)C\T)47ZSEZP=Z#:0]C20]C20]C10]C!0]C!0]C!@*\H)23ZS3-8ER52&amp;U;*!-2C+CI`#5XA+4_(B5I7H]"3?QF.Y'+,#5XA+4_%J0.SGQF.Y#E`B+4S5'J);*TG?QE.Z'9`R')`R'!^4SHA-Q%RG#JMC-'1[T2@D-2\DY;O-RXC-RXC-BWY:D`%9D`%9$\?-6@(1T#=Z(MII]33?R*.Y%A_FF8A34_**0)G([:2Y%E_#3#:-CE.1=F-S),F)0)G(@UI]C3@R**\%1^&gt;Y1DF7:N&lt;-*TG?Q".Y!E`A#4S55/!*0)%H]!1?SCLQ"*\!%XA#$V-J]!3?Q".!AEG:8E'RY-:A5"!%(P\'&lt;IHRF$QE-5[J.[^[5[IXGXI4K4?(_K'L([&lt;[);E88\WI[M63,Y,[R[H2;IR[%P8.]U#&gt;_4T2DL1$&lt;5`&lt;U&lt;;U$7V.7]WXXHDA_8T7[843]8D5Y8$1@L`8&lt;L@4&gt;LP6:L02?LX7;L6;8A00H-M,Y3_]F`[%Y6[8&gt;6GD6S65H&amp;)!!!!!</Property>
+	<Property Name="NI.Lib.SourceVersion" Type="Int">604012544</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
 	<Property Name="NI.SortType" Type="Int">3</Property>
@@ -24,5 +25,4 @@
 	<Item Name="Error.vi" Type="VI" URL="../Error.vi"/>
 	<Item Name="Critical.vi" Type="VI" URL="../Critical.vi"/>
 	<Item Name="Close.vi" Type="VI" URL="../Close.vi"/>
-	<Item Name="CloseAll.vi" Type="VI" URL="../CloseAll.vi"/>
 </Library>
